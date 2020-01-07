@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -8,24 +11,41 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  /* .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+  } */
 }
 
-.App-header {
+.App-left {
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #282c34;
+}
+.App-left .scroll-page {
+  height: 600px;
+}
+.App-middle {
+  overflow-y: scroll;
+  flex: 1;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-right {
+  overflow-y: scroll;
+  flex: 1;
+  text-align: left;
+  height: 100%;
+}
+.App-right .react-codemirror2,
+.App-right .CodeMirror.cm-s-material {
+  height: 100%;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +55,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+.scroll-animates {
+  text-align: left;
+}
+.scroll-animate {
+  margin: 20px;
+}
+.scroll-animate span {
+  margin-right: 20px;
+  text-align: left;
+}
+.scroll-animate div {
+  margin-right: 20px;
+  text-align: left;
+  margin: 10px 5px;
+}
+
+input:not([type="radio"]), select {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
 }

@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './scroll-animate'
+require('codemirror/lib/codemirror.css');
+require('codemirror/theme/material.css');
+require('codemirror/theme/neat.css');
+require('codemirror/mode/xml/xml.js');
+require('codemirror/mode/javascript/javascript.js');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
