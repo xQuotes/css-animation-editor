@@ -31,8 +31,8 @@ function App() {
       {scrolled ==='true' && <div className="App-left scroll-pages">
         <div>
           {[0, 1, 2, 3, 4, 5].map((v, k) => {
-            return <div className={`scroll-page ${keyframe} ${animated} wow`} key={k}>
-              <img src={logo} className={`App-logo`} alt="logo" />
+            return <div className={`scroll-page`} key={k}>
+              <img src={logo} className={`App-logo ${keyframe} ${animated} wow`} alt="logo" />
             </div>
           })}
         </div>

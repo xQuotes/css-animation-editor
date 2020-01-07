@@ -2,7 +2,7 @@ html, body, .App {
   height: 100%;
   /* overflow: hidden; */
 }
-.App-left {
+/* .App-left {
   overflow: auto;
 }
 .App-right {
@@ -10,7 +10,7 @@ html, body, .App {
 }
 .App-middle {
   overflow: auto;
-}
+} */
 
 .App {
   text-align: center;
@@ -24,10 +24,15 @@ html, body, .App {
 
 .App-left {
   flex: 1;
-  background-color: #333;
 }
 .App-left .scroll-page {
   height: 700px;
+}
+.App-left .scroll-page:nth-child(even) {
+  background-color: #333;
+}
+.App-left .scroll-page:nth-child(odd) {
+  background-color: #555;
 }
 
 .App-middle {
