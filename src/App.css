@@ -1,34 +1,39 @@
+html, body, .App {
+  height: 100%;
+  /* overflow: hidden; */
+}
+.App-left {
+  overflow: auto;
+}
+.App-right {
+  overflow: auto;
+}
+.App-middle {
+  overflow: auto;
+}
+
 .App {
   text-align: center;
   display: flex;
-  height: 100%;
-  overflow: hidden;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  /* .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  } */
+  /* pointer-events: none; */
 }
 
 .App-left {
   flex: 1;
-  overflow-y: scroll;
-  background-color: #282c34;
+  background-color: #333;
 }
 .App-left .scroll-page {
-  height: 600px;
+  height: 700px;
 }
+
 .App-middle {
-  overflow-y: scroll;
   flex: 1;
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,24 +43,15 @@
 }
 
 .App-right {
-  overflow-y: scroll;
   flex: 1;
   text-align: left;
-  height: 100%;
+  /* height: 100%; */
 }
 .App-right .react-codemirror2,
 .App-right .CodeMirror.cm-s-material {
   height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .scroll-animates {
   text-align: left;
 }

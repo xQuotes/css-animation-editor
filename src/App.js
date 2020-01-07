@@ -4,17 +4,14 @@ import * as animates from './animate'
 import logo from './logo.svg';
 import './App.css';
 
-const keyframes = []
-const animateds = []
 function App() {
-  const [ page, setPage ] = useState(0)
-  const [ scrolled, setScrolled ] = useState('false')
+  // const [ scrolled, setScrolled ] = useState('false')
   const [ keyframe, setKeyframe ] = useState('bounce')
   const [ keyframeDistance, setKeyframeDistance ] = useState('30px')
   const [ animated, setAnimated ] = useState('animated')
   const [ animateDuration, setAnimateDuration ] = useState(0.5)
   const [ animateDelay, setAnimateDelay ] = useState(0.5)
-  const [ animateInfinite, setAnimateInfinite ] = useState('Infinite')
+  const [ animateInfinite, setAnimateInfinite ] = useState('1')
 
   const keyframeStyle = animates[keyframe]({
     name: keyframe,
@@ -27,17 +24,18 @@ function App() {
     infinite: animateInfinite
   });
   const [ code, setCode ] = useState(`${keyframeStyle}${animatedStyle}`)
+  const [ scrolled, setScrolled ] = useState('false')
+  
   return (
     <div className="App">
-      <style>
-        {code}
-      </style>
       {scrolled ==='true' && <div className="App-left scroll-pages">
-        {[0, 1, 2, 3, 4, 5].map((v, k) => {
-          return <div className="scroll-page" key={k}>
-            <img src={logo} className={`App-logo ${keyframes[v]} ${animateds[v]} wow`} alt="logo" />
-          </div>
-        })}
+        <div>
+          {[0, 1, 2, 3, 4, 5].map((v, k) => {
+            return <div className={`scroll-page ${keyframe} ${animated} wow`} key={k}>
+              <img src={logo} className={`App-logo`} alt="logo" />
+            </div>
+          })}
+        </div>
       </div>}
       <div className="App-middle scroll-animates">
         <img src={logo} className={`App-logo ${keyframe} ${animated}`} alt="logo" />
@@ -50,19 +48,6 @@ function App() {
             <label><input type="radio" name="scrolled" checked={scrolled === 'true'} value={'true'} onChange={(e) => setScrolled(e.target.value)}/>true</label>
             <label><input type="radio" name="scrolled" checked={scrolled === 'false'} value={'false'} onChange={(e) => setScrolled(e.target.value)}/>false</label>
           </div>
-          {scrolled ==='true' && <div>
-            <span>Select Page: </span>
-            <select
-              onChange={(e) => {
-                setPage(e.target.value)
-              }}
-              value={page}
-            >
-              {[0, 1, 2, 3, 4, 5].map((val, key) => {
-                return <option key={key} value={val}>{val}</option>
-              })}
-            </select>
-          </div>}
         </div>
         <div className="scroll-animate">
           <div>
@@ -108,7 +93,7 @@ function App() {
             lineNumbers: true
           }}
           onChange={(editor, data, value) => {
-            console.log('editor, data, value', editor, data, value)
+            // console.log('editor, data, value', editor, data, value)
             setCode(value)
           }}
           style={{
@@ -116,6 +101,9 @@ function App() {
           }}
         />
       </div>
+      <style>
+        {code}
+      </style>
     </div>
   );
 }
