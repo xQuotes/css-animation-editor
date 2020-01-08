@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "https://xquotes.github.io/animate-editor.github.io/static/css/main.a6a55f9f.chunk.css",
-    "main.js": "https://xquotes.github.io/animate-editor.github.io/static/js/main.0bdabf29.chunk.js",
-    "main.js.map": "https://xquotes.github.io/animate-editor.github.io/static/js/main.0bdabf29.chunk.js.map",
-    "runtime-main.js": "https://xquotes.github.io/animate-editor.github.io/static/js/runtime-main.80b75459.js",
-    "runtime-main.js.map": "https://xquotes.github.io/animate-editor.github.io/static/js/runtime-main.80b75459.js.map",
-    "static/css/2.c0dfe0ca.chunk.css": "https://xquotes.github.io/animate-editor.github.io/static/css/2.c0dfe0ca.chunk.css",
-    "static/js/2.667b46c7.chunk.js": "https://xquotes.github.io/animate-editor.github.io/static/js/2.667b46c7.chunk.js",
-    "static/js/2.667b46c7.chunk.js.map": "https://xquotes.github.io/animate-editor.github.io/static/js/2.667b46c7.chunk.js.map",
-    "index.html": "https://xquotes.github.io/animate-editor.github.io/index.html",
-    "precache-manifest.c30fc6d7cef97e09555c6be10260f5e4.js": "https://xquotes.github.io/animate-editor.github.io/precache-manifest.c30fc6d7cef97e09555c6be10260f5e4.js",
-    "service-worker.js": "https://xquotes.github.io/animate-editor.github.io/service-worker.js",
-    "static/css/2.c0dfe0ca.chunk.css.map": "https://xquotes.github.io/animate-editor.github.io/static/css/2.c0dfe0ca.chunk.css.map",
-    "static/css/main.a6a55f9f.chunk.css.map": "https://xquotes.github.io/animate-editor.github.io/static/css/main.a6a55f9f.chunk.css.map",
-    "static/js/2.667b46c7.chunk.js.LICENSE": "https://xquotes.github.io/animate-editor.github.io/static/js/2.667b46c7.chunk.js.LICENSE"
+    "main.css": "https://xquotes.github.io/scroll-animate/static/css/main.a6a55f9f.chunk.css",
+    "main.js": "https://xquotes.github.io/scroll-animate/static/js/main.144259c3.chunk.js",
+    "main.js.map": "https://xquotes.github.io/scroll-animate/static/js/main.144259c3.chunk.js.map",
+    "runtime-main.js": "https://xquotes.github.io/scroll-animate/static/js/runtime-main.49f52374.js",
+    "runtime-main.js.map": "https://xquotes.github.io/scroll-animate/static/js/runtime-main.49f52374.js.map",
+    "static/css/2.c0dfe0ca.chunk.css": "https://xquotes.github.io/scroll-animate/static/css/2.c0dfe0ca.chunk.css",
+    "static/js/2.667b46c7.chunk.js": "https://xquotes.github.io/scroll-animate/static/js/2.667b46c7.chunk.js",
+    "static/js/2.667b46c7.chunk.js.map": "https://xquotes.github.io/scroll-animate/static/js/2.667b46c7.chunk.js.map",
+    "index.html": "https://xquotes.github.io/scroll-animate/index.html",
+    "precache-manifest.2929e730a7073db75effebdeeef753a1.js": "https://xquotes.github.io/scroll-animate/precache-manifest.2929e730a7073db75effebdeeef753a1.js",
+    "service-worker.js": "https://xquotes.github.io/scroll-animate/service-worker.js",
+    "static/css/2.c0dfe0ca.chunk.css.map": "https://xquotes.github.io/scroll-animate/static/css/2.c0dfe0ca.chunk.css.map",
+    "static/css/main.a6a55f9f.chunk.css.map": "https://xquotes.github.io/scroll-animate/static/css/main.a6a55f9f.chunk.css.map",
+    "static/js/2.667b46c7.chunk.js.LICENSE": "https://xquotes.github.io/scroll-animate/static/js/2.667b46c7.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.80b75459.js",
+    "static/js/runtime-main.49f52374.js",
     "static/css/2.c0dfe0ca.chunk.css",
     "static/js/2.667b46c7.chunk.js",
     "static/css/main.a6a55f9f.chunk.css",
-    "static/js/main.0bdabf29.chunk.js"
+    "static/js/main.144259c3.chunk.js"
   ]
 }
