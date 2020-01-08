@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2f7281ef3ee395b14d87c6584e327f6",
+    "revision": "f4c9d9eda3ffb779c7fbc5d9aaae4a11",
     "url": "https://xquotes.github.io/scroll-animate/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://xquotes.github.io/scroll-animate/static/css/2.c0dfe0ca.chunk.css"
   },
   {
-    "revision": "823c20341255e5e51d2d",
-    "url": "https://xquotes.github.io/scroll-animate/static/css/main.a6a55f9f.chunk.css"
+    "revision": "d97e926ba76a0d04930b",
+    "url": "https://xquotes.github.io/scroll-animate/static/css/main.600c1a09.chunk.css"
   },
   {
     "revision": "07f2dca16759ea9fd3e7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://xquotes.github.io/scroll-animate/static/js/2.667b46c7.chunk.js.LICENSE"
   },
   {
-    "revision": "823c20341255e5e51d2d",
-    "url": "https://xquotes.github.io/scroll-animate/static/js/main.144259c3.chunk.js"
+    "revision": "d97e926ba76a0d04930b",
+    "url": "https://xquotes.github.io/scroll-animate/static/js/main.c5b0505f.chunk.js"
   },
   {
     "revision": "f1b346a0298123ff6dda",
