@@ -1535,88 +1535,10 @@ export const fadeInDown = ({
 }
 `
 
-export const fadeInDownBig = ({
-  name = 'fadeInDownBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -${distance}, 0);
-    transform: translate3d(0, -${distance}, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -${distance}, 0);
-    transform: translate3d(0, -${distance}, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
 export const fadeInLeft = ({
   name = 'fadeInLeft',
   duration,
   distance = '100%'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-${distance}, 0, 0);
-    transform: translate3d(-${distance}, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-${distance}, 0, 0);
-    transform: translate3d(-${distance}, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
-export const fadeInLeftBig = ({
-  name = 'fadeInLeftBig',
-  duration,
-  distance = '2000px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
@@ -1691,45 +1613,6 @@ export const fadeInRight = ({
 }
 `
 
-export const fadeInRightBig = ({
-  name = 'fadeInRightBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(${distance}, 0, 0);
-    transform: translate3d(${distance}, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(${distance}, 0, 0);
-    transform: translate3d(${distance}, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
 export const fadeInUp = ({
   name = 'fadeInUp',
   duration,
@@ -1754,45 +1637,6 @@ export const fadeInUp = ({
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
-export const fadeInUpBig = ({
-  name = 'fadeInUpBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, ${distance}, 0);
-    transform: translate3d(0, ${distance}, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, ${distance}, 0);
-    transform: translate3d(0, ${distance}, 0);
   }
 
   to {
@@ -1874,80 +1718,10 @@ export const fadeOutDown = ({
 }
 `
 
-export const fadeOutDownBig = ({
-  name = 'fadeOutDownBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, ${distance}, 0);
-    transform: translate3d(0, ${distance}, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, ${distance}, 0);
-    transform: translate3d(0, ${distance}, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
 export const fadeOutLeft = ({
   name = 'fadeOutLeft',
   duration,
   distance = '100%'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-${distance}, 0, 0);
-    transform: translate3d(-${distance}, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-${distance}, 0, 0);
-    transform: translate3d(-${distance}, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
-export const fadeOutLeftBig = ({
-  name = 'fadeOutLeftBig',
-  duration,
-  distance = '2000px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
@@ -2014,41 +1788,6 @@ export const fadeOutRight = ({
 }
 `
 
-export const fadeOutRightBig = ({
-  name = 'fadeOutRightBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(${distance}, 0, 0);
-    transform: translate3d(${distance}, 0, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(${distance}, 0, 0);
-    transform: translate3d(${distance}, 0, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
 export const fadeOutUp = ({
   name = 'fadeOutUp',
   duration,
@@ -2084,86 +1823,51 @@ export const fadeOutUp = ({
 }
 `
 
-export const fadeOutUpBig = ({
-  name = 'fadeOutUpBig',
-  duration,
-  distance = '2000px'
-}) => `
-@-webkit-keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -${distance}, 0);
-    transform: translate3d(0, -${distance}, 0);
-  }
-}
-
-@keyframes ${name}  {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -${distance}, 0);
-    transform: translate3d(0, -${distance}, 0);
-  }
-}
-
-.${name} {
-  -webkit-animation-name: ${name};
-  animation-name: ${name};
-}
-`
-
 export const flip = ({
   name = 'flip',
   duration,
-  distance
+  distance = '400px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    transform: perspective(${distance}) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
@@ -2171,44 +1875,44 @@ export const flip = ({
 
 @keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 150px)
       rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    transform: perspective(${distance}) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+    -webkit-transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(${distance}) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
@@ -2225,71 +1929,71 @@ export const flip = ({
 export const flipInX = ({
   name = 'flipInX',
   duration,
-  distance
+  distance = '400px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -5deg);
   }
 
   to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 }
 
 @keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -5deg);
   }
 
   to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 }
 
@@ -2304,71 +2008,71 @@ export const flipInX = ({
 export const flipInY = ({
   name = 'flipInY',
   duration,
-  distance
+  distance = '400px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -20deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -5deg);
   }
 
   to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 }
 
 @keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -20deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -5deg);
   }
 
   to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 }
 
@@ -2383,42 +2087,42 @@ export const flipInY = ({
 export const flipOutX = ({
   name = 'flipOutX',
   duration,
-  distance
+  distance = '400px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
 
   to {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
 }
 
 @keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
 
   to {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
 }
@@ -2436,42 +2140,42 @@ export const flipOutX = ({
 export const flipOutY = ({
   name = 'flipOutY',
   duration,
-  distance
+  distance = '400px'
 }) => `
 @-webkit-keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -15deg);
     opacity: 1;
   }
 
   to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
 }
 
 @keyframes ${name}  {
   from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
+    -webkit-transform: perspective(${distance});
+    transform: perspective(${distance});
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, -15deg);
     opacity: 1;
   }
 
   to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(${distance}) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
 }

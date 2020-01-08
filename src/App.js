@@ -1,109 +1,197 @@
-import React, { useState } from 'react';
-import {UnControlled as CodeMirror} from 'react-codemirror2'
-import * as animates from './animate'
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { UnControlled as CodeMirror } from "react-codemirror2";
+import * as animates from "./animate";
+import "./App.css";
 
 function App() {
   // const [ scrolled, setScrolled ] = useState('false')
-  const [ keyframe, setKeyframe ] = useState('bounce')
-  const [ keyframeDistance, setKeyframeDistance ] = useState('30px')
-  const [ animated, setAnimated ] = useState('animated')
-  const [ animateDuration, setAnimateDuration ] = useState(0.5)
-  const [ animateDelay, setAnimateDelay ] = useState(0.5)
-  const [ animateInfinite, setAnimateInfinite ] = useState('1')
+  const [keyframe, setKeyframe] = useState("fadeInUp");
+  const [keyframeDistance, setKeyframeDistance] = useState("30px");
+  const [animated, setAnimated] = useState("animated");
+  const [animateDuration, setAnimateDuration] = useState(0.5);
+  const [animateDelay, setAnimateDelay] = useState(0.5);
+  const [animateInfinite, setAnimateInfinite] = useState("1");
 
   const keyframeStyle = animates[keyframe]({
     name: keyframe,
     distance: keyframeDistance
   });
-  const animatedStyle = animates['animated']({
-    animated: 'animated',
+  const animatedStyle = animates["animated"]({
+    animated: "animated",
     duration: animateDuration,
     delay: animateDelay,
     infinite: animateInfinite
   });
-  const [ code, setCode ] = useState(`${keyframeStyle}${animatedStyle}`)
-  const [ scrolled, setScrolled ] = useState('false')
-  
+  const [code, setCode] = useState(`${keyframeStyle}${animatedStyle}`);
+  const [scrolled, setScrolled] = useState("false");
   return (
-    <div className="App">
-      {scrolled ==='true' && <div className="App-left scroll-pages">
-        <div>
-          {[0, 1, 2, 3, 4, 5].map((v, k) => {
-            return <div className={`scroll-page`} key={k}>
-              <img src={logo} className={`App-logo ${keyframe} ${animated} wow`} alt="logo" />
+    <div className="app">
+      <div className="app-top">
+        <div className="app-left scroll-animates">
+          <div className={`app-logo ${keyframe} ${animated}`}>animate editor</div>
+          <p>
+            Edit <code>scroll-animate</code> and copy code.
+          </p>
+          <div className="scroll-animate">
+            <div>
+              <span>scrolled: </span>
+              <label>
+                <input
+                  type="radio"
+                  name="scrolled"
+                  checked={scrolled === "true"}
+                  value={"true"}
+                  onChange={e => {
+                    setScrolled(e.target.value);
+                  }}
+                />
+                true
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="scrolled"
+                  checked={scrolled === "false"}
+                  value={"false"}
+                  onChange={e => {
+                    setScrolled(e.target.value);
+                  }}
+                />
+                false
+              </label>
             </div>
-          })}
-        </div>
-      </div>}
-      <div className="App-middle scroll-animates">
-        <img src={logo} className={`App-logo ${keyframe} ${animated}`} alt="logo" />
-        <p>
-          Edit <code>scroll-animate</code> and copy code.
-        </p>
-        <div className="scroll-animate">
-          <div>
-            <span>scrolled: </span>
-            <label><input type="radio" name="scrolled" checked={scrolled === 'true'} value={'true'} onChange={(e) => setScrolled(e.target.value)}/>true</label>
-            <label><input type="radio" name="scrolled" checked={scrolled === 'false'} value={'false'} onChange={(e) => setScrolled(e.target.value)}/>false</label>
+          </div>
+          <div className="scroll-animate">
+            <div>
+              <span>animation timing function</span>
+              <select
+                onChange={e => {
+                  setKeyframe(e.target.value);
+                  setScrolled("false");
+                }}
+                value={keyframe}
+              >
+                {Object.keys(animates)
+                  .filter(v => v !== "animated")
+                  .map((val, key) => {
+                    return (
+                      <option key={key} value={val}>
+                        {val}
+                      </option>
+                    );
+                  })}
+              </select>
+            </div>
+            <div>
+              <span>animation distance</span>
+              <input
+                value={keyframeDistance}
+                onChange={e => {
+                  setKeyframeDistance(e.target.value);
+                  setScrolled("false");
+                }}
+              />
+            </div>
+          </div>
+          <div className="scroll-animate">
+            <div>
+              <span>animation duration</span>
+              <input
+                value={animateDuration}
+                onChange={e => {
+                  setAnimateDuration(e.target.value);
+                  setScrolled("false");
+                }}
+              />
+            </div>
+            <div>
+              <span>animation delay</span>
+              <input
+                value={animateDelay}
+                onChange={e => {
+                  setAnimateDelay(e.target.value);
+                  setScrolled("false");
+                }}
+              />
+            </div>
+            <div>
+              <span>animation infinite count</span>
+              <input
+                value={animateInfinite}
+                onChange={e => {
+                  setAnimateInfinite(e.target.value);
+                  setScrolled("false");
+                }}
+              />
+            </div>
           </div>
         </div>
-        <div className="scroll-animate">
-          <div>
-            <span>Animate keyframes</span>
-            <select
-              onChange={(e) => {
-                setKeyframe(e.target.value)
+
+        <div className="app-right">
+          <div className="app-css">
+            <p>CSS</p>
+            <CodeMirror
+              value={`${keyframeStyle}${animatedStyle}`}
+              options={{
+                mode: "css",
+                theme: "material",
+                lineNumbers: true
               }}
-              value={keyframe}
-            >
-              {Object.keys(animates).map((val, key) => {
-                return <option key={key} value={val}>{val}</option>
-              })}
-            </select>
+              onChange={(editor, data, value) => {
+                // console.log('editor, data, value', editor, data, value)
+                setCode(value);
+              }}
+            />
           </div>
+          {/* {scrolled === "true" && (<div className="app-js">
+            <p>JavaScript</p>
+            <CodeMirror
+              value={`${keyframeStyle}${animatedStyle}`}
+              options={{
+                mode: "js",
+                theme: "material",
+                lineNumbers: true
+              }}
+              onChange={(editor, data, value) => {
+                // console.log('editor, data, value', editor, data, value)
+                setCode(value);
+              }}
+            />
+          </div>)}
+          {scrolled === "true" && (<div className="app-html">
+            <p>HTML</p>
+            <CodeMirror
+              value={`${keyframeStyle}${animatedStyle}`}
+              options={{
+                mode: "html",
+                theme: "material",
+                lineNumbers: true
+              }}
+              onChange={(editor, data, value) => {
+                // console.log('editor, data, value', editor, data, value)
+                setCode(value);
+              }}
+            />
+          </div>)} */}
+      </div>
+      
+      </div>
+      {scrolled === "true" && (
+        <div className="app-down scroll-pages">
           <div>
-            <span>keyframes Distance</span>
-            <input value={keyframeDistance} onChange={(e) => setKeyframeDistance(e.target.value)} />
+            {[0, 1, 2, 3, 4, 5].map((v, k) => {
+              return (
+                <div className={`scroll-page`} key={k}>
+                  <div className={`app-logo ${keyframe} ${animated} wow`}>
+                    animate editor
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="scroll-animate">
-          <div>
-            <span>Animate Duration</span>
-            <input value={animateDuration} onChange={(e) => setAnimateDuration(e.target.value)} />
-          </div>
-          <div>
-            <span>Animate Delay</span>
-            <input value={animateDelay} onChange={(e) => setAnimateDelay(e.target.value)} />
-          </div>
-          <div>
-            <span>Animate Infinite</span>
-            <input value={animateInfinite} onChange={(e) => setAnimateInfinite(e.target.value)} />
-          </div>
-        </div>
-      </div>
-    
-      <div className="App-right">
-        <CodeMirror
-          value={`${keyframeStyle}${animatedStyle}`}
-          options={{
-            mode: 'css',
-            theme: 'material',
-            lineNumbers: true
-          }}
-          onChange={(editor, data, value) => {
-            // console.log('editor, data, value', editor, data, value)
-            setCode(value)
-          }}
-          style={{
-            height: '100%'
-          }}
-        />
-      </div>
-      <style>
-        {code}
-      </style>
+      )}
+      <style>{code}</style>
     </div>
   );
 }

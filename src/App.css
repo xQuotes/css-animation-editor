@@ -1,44 +1,56 @@
-html, body, .App {
+html, body, .app {
   height: 100%;
-  /* overflow: hidden; */
 }
-/* .App-left {
-  overflow: auto;
-}
-.App-right {
-  overflow: auto;
-}
-.App-middle {
-  overflow: auto;
-} */
 
-.App {
+.app {
   text-align: center;
   display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  /* pointer-events: none; */
+.app-logo {
+  display: inline-block;
+  width: 20vmin;
+  height: 20vmin;
+  line-height: 20vmin;
+  pointer-events: none;
+  color: #000;
+  background-color: aqua;
+  padding: 5vmin;
+  margin-top: 10vmin;
+  border-radius: 20vmin;
 }
-
-.App-left {
-  flex: 1;
+.app-top {
+  display: flex;
+  flex-direction: row;
+  height: 100vmin;
+  overflow-y: auto;
 }
-.App-left .scroll-page {
-  height: 700px;
+.app-down {
+  /* flex: 1; */
+  /* height: 100vh; */
+  overflow-y: auto;
 }
-.App-left .scroll-page:nth-child(even) {
+.app-down .scroll-page {
+  margin: auto;
+  height: 100vmin;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-page .app-logo {
+  margin-top: 30vmin;
+}
+.app-down .scroll-page:nth-child(even) {
   background-color: #333;
 }
-.App-left .scroll-page:nth-child(odd) {
-  background-color: #555;
+.app-down .scroll-page:nth-child(odd) {
+  background-color: #2f3a3f;
 }
 
-.App-middle {
+.app-left {
   flex: 1;
   background-color: #282c34;
-  /* min-height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,19 +59,25 @@ html, body, .App {
   color: white;
 }
 
-.App-right {
+.app-right {
   flex: 1;
   text-align: left;
-  /* height: 100%; */
+  height: 100vh;
 }
-.App-right .react-codemirror2,
-.App-right .CodeMirror.cm-s-material {
-  height: 100%;
+/* .app-right .react-codemirror2, */
+.app-right .CodeMirror.cm-s-material {
+  height: calc(99.8vh - 23px);
+  /* border-bottom: 2px solid #fff; */
+}
+.app-right p {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 0.1vmin;
 }
 
-.scroll-animates {
-  text-align: left;
-}
 .scroll-animate {
   margin: 20px;
 }
