@@ -16,7 +16,7 @@ html, body, .app {
   pointer-events: none;
   color: #000;
   background-color: aqua;
-  padding: 5vmin;
+  /* padding: 5vmin; */
   margin-top: 10vmin;
   border-radius: 20vmin;
 }
@@ -39,6 +39,7 @@ html, body, .app {
 }
 .scroll-page .app-logo {
   margin-top: 30vmin;
+  font-size: 40px;
 }
 .app-down .scroll-page:nth-child(even) {
   background-color: #333;

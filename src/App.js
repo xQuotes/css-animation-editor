@@ -30,7 +30,7 @@ function App() {
         <div className="app-left scroll-animates">
           <div className={`app-logo ${keyframe} ${animated}`}>animate editor</div>
           <p>
-            Edit <code>scroll-animate</code> and copy code.
+            Edit <code>animation</code> and copy code.
           </p>
           <div className="scroll-animate">
             <div>
