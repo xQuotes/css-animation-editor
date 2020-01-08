@@ -8,9 +8,9 @@ function App() {
   const [keyframe, setKeyframe] = useState("fadeInUp");
   const [keyframeDistance, setKeyframeDistance] = useState("30px");
   const [animated, setAnimated] = useState("animated");
-  const [animateDuration, setAnimateDuration] = useState(0.5);
-  const [animateDelay, setAnimateDelay] = useState(0.5);
-  const [animateInfinite, setAnimateInfinite] = useState("1");
+  const [animateDuration, setAnimateDuration] = useState(1);
+  const [animateDelay, setAnimateDelay] = useState(1);
+  const [animateInfinite, setAnimateInfinite] = useState("infinite");
 
   const keyframeStyle = animates[keyframe]({
     name: keyframe,
