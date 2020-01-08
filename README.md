@@ -1,4 +1,4 @@
-![1.png](/public/1.png)
+![1.png](/public/1.jpg)
 <h1 align="center">CSS Animation Editor</h1>
 
 <div align="center">
