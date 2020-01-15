@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7aa4f219271f78e07b1d91de473027cf",
+    "revision": "9ba9feb54b630464fe09ab1bea8cadae",
     "url": "https://xquotes.github.io/css-animation-editor/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://xquotes.github.io/css-animation-editor/static/css/2.c0dfe0ca.chunk.css"
   },
   {
-    "revision": "b73102e76297da7a803b",
+    "revision": "3207047ea107a4255c3d",
     "url": "https://xquotes.github.io/css-animation-editor/static/css/main.19358185.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js.LICENSE"
   },
   {
-    "revision": "b73102e76297da7a803b",
-    "url": "https://xquotes.github.io/css-animation-editor/static/js/main.2fc89504.chunk.js"
+    "revision": "3207047ea107a4255c3d",
+    "url": "https://xquotes.github.io/css-animation-editor/static/js/main.1f733eb7.chunk.js"
   },
   {
     "revision": "de7ad0c4dd676df93fc1",
