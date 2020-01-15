@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://xquotes.github.io/css-animation-editor/static/css/main.19358185.chunk.css",
-    "main.js": "https://xquotes.github.io/css-animation-editor/static/js/main.1f733eb7.chunk.js",
-    "main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/main.1f733eb7.chunk.js.map",
+    "main.js": "https://xquotes.github.io/css-animation-editor/static/js/main.ab2c1dad.chunk.js",
+    "main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/main.ab2c1dad.chunk.js.map",
     "runtime-main.js": "https://xquotes.github.io/css-animation-editor/static/js/runtime-main.12dc5cae.js",
     "runtime-main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/runtime-main.12dc5cae.js.map",
     "static/css/2.c0dfe0ca.chunk.css": "https://xquotes.github.io/css-animation-editor/static/css/2.c0dfe0ca.chunk.css",
     "static/js/2.667b46c7.chunk.js": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js",
     "static/js/2.667b46c7.chunk.js.map": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js.map",
     "index.html": "https://xquotes.github.io/css-animation-editor/index.html",
-    "precache-manifest.ad2d93c8f42069290acfe0bfc35af981.js": "https://xquotes.github.io/css-animation-editor/precache-manifest.ad2d93c8f42069290acfe0bfc35af981.js",
+    "precache-manifest.053a733baea69b49eb2c654c61ead8c4.js": "https://xquotes.github.io/css-animation-editor/precache-manifest.053a733baea69b49eb2c654c61ead8c4.js",
     "service-worker.js": "https://xquotes.github.io/css-animation-editor/service-worker.js",
     "static/css/2.c0dfe0ca.chunk.css.map": "https://xquotes.github.io/css-animation-editor/static/css/2.c0dfe0ca.chunk.css.map",
     "static/css/main.19358185.chunk.css.map": "https://xquotes.github.io/css-animation-editor/static/css/main.19358185.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.c0dfe0ca.chunk.css",
     "static/js/2.667b46c7.chunk.js",
     "static/css/main.19358185.chunk.css",
-    "static/js/main.1f733eb7.chunk.js"
+    "static/js/main.ab2c1dad.chunk.js"
   ]
 }
