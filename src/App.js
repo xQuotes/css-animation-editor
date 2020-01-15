@@ -187,7 +187,7 @@ function App() {
                   <a href="https://github.com/graingert/WOW" tagrget="__blank">https://github.com/graingert/WOW</a> <br />
                   </div>
                   <div className={`app-logo ${keyframe} ${animated} wow`}>
-                    animate editor
+                    animate
                   </div>
                 </div>
               );
