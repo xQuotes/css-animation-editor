@@ -41,6 +41,13 @@ html, body, .app {
   margin-top: 30vmin;
   font-size: 40px;
 }
+.scroll-page-main {
+  padding-top: 20px;
+  color: #fff;
+}
+.scroll-page-main a {
+  color: #fff;
+}
 .app-down .scroll-page:nth-child(even) {
   background-color: #333;
 }

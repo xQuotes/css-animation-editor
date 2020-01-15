@@ -182,6 +182,10 @@ function App() {
             {[0, 1, 2, 3, 4, 5].map((v, k) => {
               return (
                 <div className={`scroll-page`} key={k}>
+                  <div className={`scroll-page-main`}>
+                  How to use scroll animation: <br />
+                  <a href="https://github.com/graingert/WOW" tagrget="__blank">https://github.com/graingert/WOW</a> <br />
+                  </div>
                   <div className={`app-logo ${keyframe} ${animated} wow`}>
                     animate editor
                   </div>
