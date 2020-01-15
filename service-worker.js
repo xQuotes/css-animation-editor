@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://xquotes.github.io/css-animation-editor/precache-manifest.8132f1338f63d08f73eb3ebc920f89e1.js"
+  "https://xquotes.github.io/css-animation-editor/precache-manifest.794dbf57beb1b2b5dc9ad06c9bf14907.js"
 );
 
 self.addEventListener('message', (event) => {

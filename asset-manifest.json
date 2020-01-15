@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "https://xquotes.github.io/css-animation-editor/static/css/main.600c1a09.chunk.css",
-    "main.js": "https://xquotes.github.io/css-animation-editor/static/js/main.f3c47cd5.chunk.js",
-    "main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/main.f3c47cd5.chunk.js.map",
+    "main.css": "https://xquotes.github.io/css-animation-editor/static/css/main.19358185.chunk.css",
+    "main.js": "https://xquotes.github.io/css-animation-editor/static/js/main.2fc89504.chunk.js",
+    "main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/main.2fc89504.chunk.js.map",
     "runtime-main.js": "https://xquotes.github.io/css-animation-editor/static/js/runtime-main.12dc5cae.js",
     "runtime-main.js.map": "https://xquotes.github.io/css-animation-editor/static/js/runtime-main.12dc5cae.js.map",
     "static/css/2.c0dfe0ca.chunk.css": "https://xquotes.github.io/css-animation-editor/static/css/2.c0dfe0ca.chunk.css",
     "static/js/2.667b46c7.chunk.js": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js",
     "static/js/2.667b46c7.chunk.js.map": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js.map",
     "index.html": "https://xquotes.github.io/css-animation-editor/index.html",
-    "precache-manifest.8132f1338f63d08f73eb3ebc920f89e1.js": "https://xquotes.github.io/css-animation-editor/precache-manifest.8132f1338f63d08f73eb3ebc920f89e1.js",
+    "precache-manifest.794dbf57beb1b2b5dc9ad06c9bf14907.js": "https://xquotes.github.io/css-animation-editor/precache-manifest.794dbf57beb1b2b5dc9ad06c9bf14907.js",
     "service-worker.js": "https://xquotes.github.io/css-animation-editor/service-worker.js",
     "static/css/2.c0dfe0ca.chunk.css.map": "https://xquotes.github.io/css-animation-editor/static/css/2.c0dfe0ca.chunk.css.map",
-    "static/css/main.600c1a09.chunk.css.map": "https://xquotes.github.io/css-animation-editor/static/css/main.600c1a09.chunk.css.map",
+    "static/css/main.19358185.chunk.css.map": "https://xquotes.github.io/css-animation-editor/static/css/main.19358185.chunk.css.map",
     "static/js/2.667b46c7.chunk.js.LICENSE": "https://xquotes.github.io/css-animation-editor/static/js/2.667b46c7.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.12dc5cae.js",
     "static/css/2.c0dfe0ca.chunk.css",
     "static/js/2.667b46c7.chunk.js",
-    "static/css/main.600c1a09.chunk.css",
-    "static/js/main.f3c47cd5.chunk.js"
+    "static/css/main.19358185.chunk.css",
+    "static/js/main.2fc89504.chunk.js"
   ]
 }
